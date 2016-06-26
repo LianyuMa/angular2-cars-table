@@ -24,6 +24,10 @@ export class CarsTableComponent {
 
   id = null;
 
+  clearId() {
+    this.id = null;
+  }
+
   submitted = false;
 
   onSubmit() { this.submitted = true }

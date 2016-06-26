@@ -43,6 +43,9 @@ var CarsTableComponent = (function () {
             rowData: this.rowData
         };
     }
+    CarsTableComponent.prototype.clearId = function () {
+        this.id = null;
+    };
     CarsTableComponent.prototype.onSubmit = function () { this.submitted = true; };
     CarsTableComponent.prototype.newCar = function () {
         this.car = new car_1.Car('Lancer', '1992', '0');
